@@ -1,0 +1,132 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: monospace;
+  font-size: 1.25rem;
+  background-color: #3e3e42;
+  min-height: 100vh;
+}
+#quizSelection {
+  width: fit-content;
+  margin: auto;
+  background-color: #e09f45;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20vh;
+}
+#quizSelection form {
+  width: fit-content;
+  margin: auto;
+}
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  background-color: #252526;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  font-weight: bold;
+}
+h1 {
+  margin: 0px;
+  background-color: #252526;
+  text-align: center;
+  padding: 15px;
+}
+.questionCard {
+  background: #e09f45;
+  width: fit-content;
+  width: 800px;
+  padding: 15px;
+  border-radius: 15px;
+  margin: auto;
+  border: 2px solid;
+}
+.question {
+  width: 800px;
+  background-color: #e09f45;
+  border: 2px solid;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 800px;
+}
+.radAnswers {
+  display: block;
+}
+button,
+select,
+option {
+  font-family: monospace;
+  font-size: 1.25rem;
+}
+.error {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  text-align: center;
+  width: fit-content;
+  background-color: #e09f45;
+  padding: 20px;
+  border-radius: 15px;
+  margin: auto;
+}
+.errorSymbol {
+  font-size: 3rem;
+  background: black;
+  border-radius: 15px;
+}
+#errorText {
+  width: fit-content;
+  align-self: center;
+}
+#leftError {
+  float: left;
+}
+#rightError {
+  float: right;
+}
+.questionNum {
+  border: 2px solid;
+  background: #5f5dbc;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: 1.35rem;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#resultsButton {
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#errorButton {
+  width: fit-content;
+  margin: auto;
+  margin-top: 250px;
+  align-items: center;
+}
+input:hover + label {
+  /*works by adding label (sibling element) to hover condition
+    allowing for the label to become bold when user hovers over radio button*/
+  font-weight: bolder;
+}
+.score {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  background: #5f5dbc;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+.incorrect {
+  text-decoration: line-through;
+}
